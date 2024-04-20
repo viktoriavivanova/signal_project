@@ -21,7 +21,7 @@ public class FileOutputStrategy implements OutputStrategy {
     public final ConcurrentHashMap<String, String> file_map = new ConcurrentHashMap<>();
 
     public FileOutputStrategy(String baseDirectory) {
-      this.BaseDirectory = baseDirectory; //2 spaces indent and line break
+        this.BaseDirectory = baseDirectory; //2 spaces indent and line break
     }
 
     @Override
@@ -36,7 +36,7 @@ public class FileOutputStrategy implements OutputStrategy {
         try {
             // Create the directory
             //moved so that it is at +2 spaces indent
-          Files.createDirectories(Paths.get(BaseDirectory));
+            Files.createDirectories(Paths.get(BaseDirectory));
         } catch (IOException e) {
             System.err.println("Error creating base directory: " + e.getMessage());
             return;
@@ -47,9 +47,9 @@ public class FileOutputStrategy implements OutputStrategy {
 
         // Write the data to the file
         try (PrintWriter out = new PrintWriter(
-          Files.newBufferedWriter(Paths.get(FilePath),
-              StandardOpenOption.CREATE, StandardOpenOption.APPEND))) { //comma stays attached to the token and +4 spaces
-              out.printf("Patient ID: %d, Timestamp: %d, Label: %s, Data: %s%n", patientId, timeStamp, label, data);
+            Files.newBufferedWriter(Paths.get(FilePath),
+                StandardOpenOption.CREATE, StandardOpenOption.APPEND))) { //comma stays attached to the token and +4 spaces
+                out.printf("Patient ID: %d, Timestamp: %d, Label: %s, Data: %s%n", patientId, timeStamp, label, data);
         } catch (Exception e) {
             System.err.println("Error writing to file " + FilePath + ": " + e.getMessage());
         }
