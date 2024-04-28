@@ -1,0 +1,3 @@
+After a certain threshold is reached the AlertGenerator is triggered. It checks in the DataStorage ofr thrends and if the condition is confirmed an alert is sent.
+After that a nurses is alerted and the patient is helped. After that the nurse resolves the issue.
+Else if the is no trend an alert is not triggered.

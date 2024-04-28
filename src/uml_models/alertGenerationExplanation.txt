@@ -1,0 +1,6 @@
+We have four classes in this diagram. The first one being "Patient", representing a patient in the ward.
+The class contains information about the patient and the oprion to return his threshold.
+The second one is "AlertGenerator". It monitors the data and generates alerts when a threshold is crossed. It collects patient data and generates alerts by first processing the data checking if the threshold has been crossed.
+//shouldn't have the getAlerts()
+The third one is "Alert" which is triggered by the AlertGenerator. It assigns it an ID and checks for the alert parameters and values. With its method also the details can be returned.
+The last one is "AlertManager". It represents a collection of the triggered alerts and makes sure that they are sent to the medical staff. When a new alert is generated it is added to the list.

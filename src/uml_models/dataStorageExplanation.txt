@@ -1,0 +1,4 @@
+DataStorage has 3 classes: DataStorage, PatientData, DataRetriever
+DataStorage takes care of storing patient data. It can add, retrieve, delete patient data and check for access. It also takes safety measures to protect the patient information with the help of encryption before storing it.
+PatientData includes sensitive information about the batient such as vitals and medical history. It could encrypt and decrypt the data.
+DataRetriever references the DataStorage object. It csn retrieves data from the storage and decrypts it by firstly verifying the user. 

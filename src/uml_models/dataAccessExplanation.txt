@@ -1,0 +1,5 @@
+DataAccess has 6 classes.
+The first one is DataListener which is an abstract class. Two of its methods are common for the data listeners for starting and stopping connection and has an abstract class to process the input.
+The next 3 are TCPDataListener, WebSocketDataListener and FileDatalistener which override the DataListener methods start() and stop(), listening for the respective data sources.
+The next one is DataParser which parses the raw data from DataListener into standard one. First it converts it, then checks if it's valid.
+The last one is DataSourceAdapter. It processes standardized data from DataParser and then stores it.

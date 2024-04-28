@@ -1,0 +1,4 @@
+Identification has 3 classes.
+The first one is PatientIdentifier which matches the input(patientID) with ids from the hospital's database, returns the match and reports any discrepancies to IdentityManager.
+IdentityManager collects the discrepancies. It also fixes them and validates them after that and corrects mismatches by releasing the data to the right patient.
+The last one is PatientRecord which keeps a collection of medical records. It receives patient data from the database and updates it with new information.
