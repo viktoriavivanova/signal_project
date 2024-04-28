@@ -1,0 +1,3 @@
+Whenever a set threshold is reached AlertGenerator is set off which triggers an alert.
+After that the alert is sent to the staff responsible for the patient. 
+They take care of the patient and after that either resolve the alert or it resolves authomatically.

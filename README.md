@@ -66,3 +66,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Project member
 - Student ID: i6340968
+
+## Diagrams
+UML diagrams have been added to the folder uml_models
+The diagrams are uml state diagrams for AlertGenerator, DataAccess, DataStorage and Identification
+There is also a state diagram and a sequence diagram
+[See the new folder in `src`](./src/uml_diagrams)
+
