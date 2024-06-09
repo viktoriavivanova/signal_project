@@ -5,7 +5,7 @@ import com.cardio_generator.outputs.OutputStrategy;
 /**
  * The PatientDataGenerator interface provides a contract for generating patient data.
  * Implementations of this interface should generate patient data based on a given patient ID
- * and use the specified OutputStrategy to handle the generated data.
+ * and use the specified OutputStrategy to handle the generated data
  */
 public interface PatientDataGenerator {
     /**
